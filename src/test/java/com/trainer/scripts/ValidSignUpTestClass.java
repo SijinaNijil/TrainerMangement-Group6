@@ -1,6 +1,7 @@
 package com.trainer.scripts;
 
 import java.io.IOException;
+import org.openqa.selenium.Alert;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
@@ -74,7 +75,7 @@ public class ValidSignUpTestClass extends TestBase
 				
 				
 				 org.openqa.selenium.Alert msg=driver.switchTo().alert();
-				   msg.accept();
+				  // msg.accept();
 			    String actmsg=msg.getText();
 			    String expmsg="Sign Up Successfull!";
 			    Assert.assertEquals(actmsg,expmsg);
@@ -82,10 +83,10 @@ public class ValidSignUpTestClass extends TestBase
 			    msg.accept();
 			  
 			    
-			    
-			    
+		  
 			String expectedTitle =AutomationConstants.HOMEPAGETITLE;
 		    String actualTitle =driver.getTitle();
 		    Assert.assertEquals(expectedTitle,actualTitle);
+		  
 			}
 }

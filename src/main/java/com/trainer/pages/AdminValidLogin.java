@@ -14,9 +14,6 @@ public class AdminValidLogin {
 	@FindBy(xpath="//button[@class= 'w-100 btn btn-lg btn-primary']")
 	private WebElement bttn;
 
-@FindBy(xpath="//a[@class= 'nav-link']")
-private WebElement signup;
-
 @FindBy(linkText="Login")
 WebElement clkLink;
 	

@@ -5,10 +5,12 @@
     <classes>
       <class name="com.trainer.scripts.TestClass">
         <methods>
-          <include name="quitBrowser"/>
-          <include name="tearDown"/>
-          <include name="ableToSignUp"/>
+          <include name="validlog1"/>
+          <include name="verifyLogin"/>
+          <include name="ableToSearch"/>
           <include name="onSetup"/>
+          <include name="ableToClkLinkApprove"/>
+          <include name="ableToReject"/>
         </methods>
       </class> <!-- com.trainer.scripts.TestClass -->
     </classes>

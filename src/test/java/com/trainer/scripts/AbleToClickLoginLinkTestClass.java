@@ -22,6 +22,7 @@ public class AbleToClickLoginLinkTestClass extends TestBase
     String expectedTitle =AutomationConstants.HOMEPAGETITLE;
     String actualTitle =driver.getTitle();
     Assert.assertEquals(expectedTitle,actualTitle);
+    driver.close();
     }
 
 

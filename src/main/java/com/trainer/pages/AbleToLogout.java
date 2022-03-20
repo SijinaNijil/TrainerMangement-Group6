@@ -11,28 +11,29 @@ WebDriver driver;
 //Login Test case
 // ----------------------------------------------------------------------------------------------
 @FindBy(id="floatingInput")
-private WebElement uname;
+public WebElement uname;
 @FindBy(id="floatingPassword")
-private WebElement passwd;
+public WebElement passwd;
 @FindBy(xpath="//button[@class= 'w-100 btn btn-lg btn-primary']")
-private WebElement bttn;
-
+public WebElement bttn;
+@FindBy(xpath="//html/body/app-root/app-login/main/div[text()=' Invalid Login Credintials ']")
+public WebElement invLog;
 // ----------------------------------------------------------------------------------------------
 
 @FindBy(linkText="Login")
-WebElement clkLink;
+public WebElement clkLink;
 
 
 // ---------------------------------------------------------------------------------------------
 
 @FindBy(xpath="//a[@class= 'nav-link']")
-private WebElement signup;
+public WebElement signup;
 
 // ----------------------------------------------------------------------------------------------//
 
 
-@FindBy(linkText="Logout")
-WebElement clkLinkLogOut;
+@FindBy(xpath="//a[text()='Logout']")
+public WebElement clkLinkLogOut;
 
 public AbleToLogout(WebDriver driver){
         this.driver = driver;
@@ -49,9 +50,11 @@ public void clickLoginLink(){
 //---------------------------------------------------------------------------------------------	 	 
 	 
 	 public void setUName(String strUName){
+		 uname.clear();
 			uname.sendKeys(strUName);}
 		//Click on login button
 		public void setPasswd(String strpasswd){
+			passwd.clear();
 			passwd.sendKeys(strpasswd);     
 		}
 		//Set password in password textbox

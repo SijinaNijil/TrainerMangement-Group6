@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.trainer.scripts.AbleToSearchTestClass">
+      <class name="com.trainer.scripts.TestClass">
         <methods>
-          <include name="ableToClkLink"/>
-          <include name="quitBrowser"/>
-          <include name="tearDown"/>
+          <include name="viewAllocation"/>
+          <include name="ableToSearch"/>
           <include name="onSetup"/>
         </methods>
-      </class> <!-- com.trainer.scripts.AbleToSearchTestClass -->
+      </class> <!-- com.trainer.scripts.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

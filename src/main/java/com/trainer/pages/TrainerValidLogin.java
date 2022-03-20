@@ -9,28 +9,28 @@ import org.openqa.selenium.support.PageFactory;
 public class TrainerValidLogin {
 	WebDriver driver;
 	@FindBy(id="floatingInput")
-	private WebElement uname;
+	public WebElement uname;
 	@FindBy(id="floatingPassword")
-	private WebElement passwd;
+	public WebElement passwd;
 	@FindBy(xpath="//button[@class= 'w-100 btn btn-lg btn-primary']")
-	private WebElement bttn;
+	public WebElement bttn;
 	@FindBy(linkText="Login")
-	WebElement clkLink;
+	public WebElement clkLink;
 	////button[text()=' Edit Profile']
 	@FindBy(xpath="//button[text()=' Edit Profile']")
-	private WebElement bttn1;
+	public WebElement bttn1;
 	                                         //edit profile
 	
 	@FindBy(id="h_qualification")
-	private WebElement h_qualification;
+	public WebElement h_qualification;
 	
 	// //a[@class='btn btn-success']
 	
 	
 	@FindBy(xpath="//button[@type='submit]")
-	private WebElement bttnedi1t;
+	public WebElement bttnedi1t;
 	@FindBy(xpath="/html/body/app-root/app-edit-details-form/form/button")
-	private WebElement bttnedit;
+	public WebElement bttnedit;
 	public TrainerValidLogin(WebDriver driver){
 	    this.driver = driver;
 	    //This initElements method will create all WebElements

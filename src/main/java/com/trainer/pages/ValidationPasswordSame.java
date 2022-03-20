@@ -45,6 +45,8 @@ public class ValidationPasswordSame {
 	//private WebElement password;
 	////input[@type='checkbox']
 	////div[@class='dropdown-list']
+	@FindBy(xpath="html/body/app-root/app-sign-up/form")
+	private WebElement clk;
 	
 	@FindBy(xpath="//span[@class='dropdown-btn']")
 	private WebElement dropdown;
@@ -134,6 +136,7 @@ public class ValidationPasswordSame {
 	public void setRePassword(String strrepass)
 		{
 			re_password.sendKeys(strrepass);
+			clk.click();
 		}
 	
 	/*public void setProfilePic()

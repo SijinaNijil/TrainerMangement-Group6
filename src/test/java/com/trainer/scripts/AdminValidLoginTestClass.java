@@ -20,7 +20,7 @@ public class AdminValidLoginTestClass extends TestBase{
 	
 	objLogin = new AdminValidLogin(driver);
     //login to application
-
+objLogin.clickLoginLink();
 		String uname = ExcelUtility.getCellData(1, 1);
 		objLogin.setUName(uname);
 		

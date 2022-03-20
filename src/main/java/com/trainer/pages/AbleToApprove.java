@@ -9,22 +9,22 @@ public class AbleToApprove {
 WebDriver driver;
 	
 	@FindBy(id="floatingInput")
-	private WebElement uname;
+	public WebElement uname;
 	@FindBy(id="floatingPassword")
-	private WebElement passwd;
+	public WebElement passwd;
 	@FindBy(xpath="//button[@class= 'w-100 btn btn-lg btn-primary']")
-	private WebElement bttn;
+	public WebElement bttn;
 
 	@FindBy(xpath="//button[@class= 'btn btn-primary']")
-	private WebElement bttn1;
+	public WebElement bttn1;
 	// ----------------------------------------------------------------------------------------------
 
 	@FindBy(linkText="Login")
-	WebElement clkLink;
+	public WebElement clkLink;
 
 	
 	@FindBy(linkText="Approve")
-	WebElement clkApprove;
+	public WebElement clkApprove;
 	public AbleToApprove(WebDriver driver){
         this.driver = driver;
         //This initElements method will create all WebElements
